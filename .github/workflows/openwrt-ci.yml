@@ -62,7 +62,7 @@ jobs:
           git clone https://github.com/pymumu/luci-app-smartdns
           git clone https://github.com/rosywrt/luci-theme-rosy
           git clone https://github.com/destan19/OpenAppFilter.git
-          git clone https://github.com/hong0980/luci-app-passwall.git
+        # git clone https://github.com/hong0980/luci-app-passwall.git
 
       - name: Update feeds
         run: |
@@ -174,7 +174,7 @@ jobs:
           CONFIG_PACKAGE_luci-app-smartdns=y
           CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-app-oaf=y
-          CONFIG_PACKAGE_luci-app-passwall=y
+          # CONFIG_PACKAGE_luci-app-passwall=y
           # CONFIG_PACKAGE_luci-app-wireguard=y
           # CONFIG_PACKAGE_luci-app-wrtbwmon=y
           # EOF
