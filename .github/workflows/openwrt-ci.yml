@@ -61,8 +61,8 @@ jobs:
           cd openwrt-packages
           git clone https://github.com/pymumu/luci-app-smartdns
           git clone https://github.com/rosywrt/luci-theme-rosy
-          git clone https://github.com/destan19/openwrt.git
-          git clone https://github.com/Lienol/openwrt-package/tree/master/lienol/luci-app-passwall
+          git clone https://github.com/destan19/OpenAppFilter.git
+          git clone https://github.com/hong0980/luci-app-passwall.git
 
       - name: Update feeds
         run: |
