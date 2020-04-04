@@ -151,6 +151,41 @@ jobs:
 
           # 常用LuCI插件选择:
           cat >> .config <<EOF
+          #
+          # Network Devices
+          #
+            CONFIG_PACKAGE_kmod-8139cp=y
+            CONFIG_PACKAGE_kmod-8139too=y
+            CONFIG_PACKAGE_kmod-bnx2=y
+            CONFIG_PACKAGE_kmod-e1000=y
+            CONFIG_PACKAGE_kmod-e1000e=y
+            CONFIG_PACKAGE_kmod-i40e=y
+            CONFIG_PACKAGE_kmod-i40evf=y
+            CONFIG_PACKAGE_kmod-igb=y
+            CONFIG_PACKAGE_kmod-igbvf=y
+            CONFIG_PACKAGE_kmod-ixgbe=y
+            CONFIG_PACKAGE_kmod-libphy=y
+            CONFIG_PACKAGE_kmod-macvlan=y
+            CONFIG_PACKAGE_kmod-mii=y
+            CONFIG_PACKAGE_kmod-pcnet32=y
+            CONFIG_PACKAGE_kmod-r8125=y
+            CONFIG_PACKAGE_kmod-r8169=y
+            CONFIG_PACKAGE_kmod-tulip=y
+            CONFIG_PACKAGE_kmod-vmxnet3=y
+
+          #
+          # Network Support
+          #
+            CONFIG_PACKAGE_kmod-mdio=y
+            CONFIG_PACKAGE_kmod-ppp=y
+            CONFIG_PACKAGE_kmod-mppe=y
+            CONFIG_PACKAGE_kmod-sched=y
+            CONFIG_PACKAGE_kmod-sched-core=y
+            CONFIG_PACKAGE_kmod-slhc=y
+            CONFIG_PACKAGE_kmod-tcp-bbr=y
+            CONFIG_PACKAGE_kmod-tun=y
+          #    =========================================
+          
           # CONFIG_PACKAGE_luci-app-adbyby-plus=y
           # CONFIG_PACKAGE_luci-app-aria2=y
           # CONFIG_PACKAGE_luci-app-baidupcs-web=y
